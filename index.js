@@ -11,7 +11,7 @@ app.use(express.json());
 // Port
 const port = 5000;
 
-const uri = "mongodb+srv://mydb_user1:271oDPejxlYKnc3G@cluster0.ra2hb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const uri = "mongodb+srv://<db_user>:<password>@cluster0.ra2hb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 async function run() {
